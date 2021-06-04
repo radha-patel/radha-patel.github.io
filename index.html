@@ -1,0 +1,27 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Radha Patel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style='display:flex; flex-direction: row;'>
+    <div style='flex: 1.0; display:flex; flex-direction: column;'>
+        <img src='images/prom_pic.JPG' alt="Profile Picture" id='profile'>
+        <h1 id='name'>Radha Patel</h1>
+        <div class='selectors'>
+            <div class='button' id='aboutButton' onmouseover=mouseOver(this) onmouseout=mouseOut(this)><p>About</p></div>
+            <div class='button' id='projectsButton' onmouseover=mouseOver(this) onmouseout=mouseOut(this)><p>Projects</p></div>
+            <div class='button' id='blogButton' onmouseover=mouseOver(this) onmouseout=mouseOut(this)><p>Blogs</p></div>
+        </div>
+    </div>
+    <div style='flex: 1.0; display:flex; flex-direction: column; justify-content: center; margin: 10px;'> 
+        <div class='typewriter'>
+            <p>Hi! Nice to meet you!</p>
+        </div>
+        <ul id='description'>
+            <p>I'm <b>Radha</b>, a learner, coder, and maker.</p>
+            <p>I study Computer Science and Business Analytics at the Massachusetts Institute of Technology in Cambridge, MA.</p>
+            <p>Last semester, I built content used by 400k+ monthly users at an EdTech startup as a software developer.</p>
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
