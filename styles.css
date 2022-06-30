@@ -1,0 +1,16 @@
+/* HOMEPAGE STYLING */
+.homepage {
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+.main-hobbies-text {
+    margin-bottom: 0.25rem;
+}
+
+.side-hobbies-text {
+    color: gray;
+    font-size: 14px;
+    line-height: 1.3;
+}

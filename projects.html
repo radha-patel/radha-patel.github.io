@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="projects.css">
+
+        <title>Projects - Radha</title>
+    </head>
+    <body>
+        <div class="projects">
+            <h4 class="project-title">Portable Password Manager</h4>
+            <h6 class="project-subtitle">6.115 Microcomputer Project Laboratory Final Project</h6>
+            <div class="project-description">
+                <p>
+                    Secure passwords are difficult to remember and entering them is tedious. Web-based or desktop password managers are perhaps helpful, but they require a login or download on each device that a user utilizes  and also have potential to be hacked. My solution - a portable, hand-held password manager, creating using a PSoC 5LP.
+                </p>
+                <p>
+                    This device enables a user to store their usernames and passwords, and autofills on any computer when connected via USB. I programmed the PSoC 5LP to emulate the USB HID mode of a keyboard and constructed a package to convert characters to key-press input reports to enable the autofill functionality. In addition, I integrated
+                    <ul>
+                        <li>an RFID reader to verify the user’s card upon device activation</li>
+                        <li>an HC-06 Bluetooth module to receive new account data through a computer serial port</li>
+                        <li>a TFT screen for the user to manage accounts</li>
+                        <li>an on-chip EEPROM to structure and store login data</li>
+                        <li>modules to calculate password strength and generate new stronger passwords as bonus features</li>
+                    </ul>
+                </p>
+                <img src="assets/password-manager/electrical-schematic.png" id="password-manager-schematic"/>
+                <img src="assets/password-manager/software-block-diagram.png" id="software-block-diagram"/>
+                <img src="assets/password-manager/device.jpg" id="password-manager-schematic"/>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
