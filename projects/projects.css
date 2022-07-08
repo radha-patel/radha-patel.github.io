@@ -26,6 +26,10 @@
     margin-right: auto;
 }
 
+.vertical-project-image {
+    height: 70vh;
+}
+
 .card {
     border: none;
 }
