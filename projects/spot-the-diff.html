@@ -14,37 +14,23 @@
     </head>
     <body>
         <div class="outer-box">
-            <h4 class="project-title">Who Will Be The Next Popstar?</h4>
-            <h6 class="project-subtitle">6.08 Interconnected Embedded Systems Final Project</h6>
+            <h4 class="project-title">Spot(ify) The Diff</h4>
+            <h6 class="project-subtitle">MIT WebLab</h6>
             <div class="project-description">
-                <p>
-                    We created an interactive, <i>Who Will be the Next Popstar?</i> game in which users play a series of minigames to test their dancing, singing, and rhythmical prowess and receive scores that represent their musical ability. The minigames include 
-                    <ul>
-                        <li>a Just Dance-esque game in which different steps are depicted on an LCD screen in sequence that the user has to then copy in time;</li>
-                        <li>a karaoke game where the objective is for the user to sing as closely to the original recording as possible;</li>
-                        <li>and finally, a rhythm game in which users will receive a unique sequence of buttons/actions to hit in time with music and will be scored based on the timing of the moves.</li>
-                    </ul>
-                    The scoreboard for all players is visible on a self-refreshing website along with playing instructions. The purpose of this project is to help individuals overcome their inhibitions and anxiety towards musical performance as well as relieve stress from the associated endorphin rush. We describe the specifics below.
-                </p>
-                <p>
-                    My part of the project was the Just Dance mini-game, in which a song 1-2 minutes in length is played through the speaker and different dance moves are depicted one after another on their LCD screen, which the user then has to perform. The Esp32 is considered the “remote” (held in the right hand) and an accelerometer is used to detect if the user is performing the correct motion and if so, count the number of repetitions.
-
-                    A score is awarded for each individual dance move based on the number of correct repetitions of a move that the user performs and how this number compares to the expected count. The individual scores are totalled as the song progresses for each user and the final amount is the overall score that is displayed and sent to the server via an HTTP POST request. The database and public scoreboard then updates accordingly.
-
-                    I found that the most consistent approach to detecting different dance moves was to use a distinctive features approach in which I broke down each motion into two-dimensions and then found several (sequential) characteristic features in the acceleration along the two relevant axes. I established thresholds based on the features and constructed a state machine that determines which part of the motion is being completed and increments a counter once an entire motion has been completed (i.e. all the thresholds have been passed).
-                </p>
+                <p>Spot(ify) the Diff is a music social networking site that analyzes you and your friends' music history to provide custom listening insights. Spot(ify) the Diff generates a compatibility score quantifying the similarities between you and your friends' music tastes as well as playlists customized for you and a friend. Finally, Spot(ify) the Diff highlights you and your friends' top artists and top tracks.</p>
+                <p>My team and I created this website using React, Node.js, Express.js, and MongoDB. You can check it our at <a href="https://spot-the-diff.herokuapp.com/" target="_blank">https://spot-the-diff.herokuapp.com/</a>.</p>
                 <div id="accordion">
                     <div class="card">
                         <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
                             <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <i class="bi bi-caret-down-fill"></i>Game Block Diagram
+                                <i class="bi bi-caret-down-fill"></i>Home Page
                             </button>
                         </h5>
                     </div>
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
-                            <img src="../assets/next-popstar/game_state_diagram.png" class="project-image"/>
+                            <img src="../assets/spot-the-diff/home-page.png" class="project-image"/>
                         </div>
                         </div>
                     </div>
@@ -52,13 +38,13 @@
                         <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <i class="bi bi-caret-down-fill"></i>Acceleration Plots
+                                <i class="bi bi-caret-down-fill"></i>Stats Page
                             </button>
                         </h5>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
-                            <img src="../assets/next-popstar/acceleration_plots.jpg" class="project-image"/>
+                            <img src="../assets/spot-the-diff/stats-page.png" class="project-image"/>
                         </div>
                         </div>
                     </div>
@@ -66,13 +52,13 @@
                         <div class="card-header" id="headingThree">
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="bi bi-caret-down-fill"></i>Module Block Diagram
+                                <i class="bi bi-caret-down-fill"></i>Friends Page
                             </button>
                         </h5>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                         <div class="card-body">
-                            <img src="../assets/next-popstar/block_diagram.png" class="project-image"/>
+                            <img src="../assets/spot-the-diff/friends-page.png" class="project-image"/>
                         </div>
                         </div>
                     </div>
