@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="snippets.css">
+
+    <title>Snippets - Radha</title>
+</head>
+
+<body>
+    <div class="outer-box">
+        <h4 class="project-title">Why Julia?</h4>
+        <h6 class="project-subtitle">Tuesday February 27th, 2024</h6>
+        <div class="project-description">
+            <p>
+                Hi! My name is Radha and I am in my last year at MIT, about to wrap up my M.Eng. in Computer Science. My M.Eng. concentration is in computer systems and accordingly, I am researching in the Compiler’s Group (ComMIT) in CSAIL. I’m building a specialized compiler for kernels that involve symmetric tensors and nearly all of the programming I do for my research is in Julia. Over the past few semesters in this group, I have come to appreciate the power and beauty of Julia and for my first "snippet", I want to share why Julia is such a great language for numerical and scientific computing.
+            </p>
+            <p>
+                The Julia programming language is now an open source project with over 1,000 contributors. It was first created in 2014 by Jeff Bezanson, Stefan Karpinski, Viral B. Shah, and Alan Edelman to be the amalgam of their favorite qualities from several different languages. Namely, they sought the <i>speed of C with the dynamism of Ruby</i>; <i>true macros like Lisp, but with obvious, familiar mathematical notation like Matlab</i>; and, amongst other qualities, something <i>as usable for general programming as Python</i>, as they proclaimed in their somewhat <a href="https://julialang.org/blog/2012/02/why-we-created-julia/">poetic blog post</a>. Julia is a JIT compiled language built on top of the LLVM compiler and is designed for high performance.
+            </p>
+            <p>
+                Julia’s defining paradigm is <b>multiple dispatch</b>, a fundamental feature that enables writing efficient code for computational tasks. To understand multiple dispatch, we need to make the distinction between functions and methods. Typically, in languages like Python or C++, we consider functions to be modular blocks of stand-alone code while methods are modular blocks of code tied to an object (i.e. a class). However, in Julia, the definitions are slightly different. A <b>function</b> is an object that maps a tuple of arguments (of any type) to a return value (or throws an exception if no appropriate value can be returned). A function may have many different implementations for different types of arguments, each which has a different behavior. A <b>method</b>, on the other hand, is a definition of one possible behavior for a function. The signatures of method definitions can be annotated to indicate the types of arguments and the number of arguments.
+            </p>
+            <p>
+                The choice of which method to execute when a function is applied is called <b>dispatch</b>. In traditional object-oriented languages, dispatch occurs based only on the first argument which has a special argument syntax and is often implied, rather than explicitly written as an argument. <a href="https://opensourc.es/blog/basics-multiple-dispatch/">This article</a> about Julia Basics illustrates a good example of this in Python. For instance, we may have a class <code>Manufacturer</code> that has the instance method <code>add(self, thing)</code>. Then, if we were to call the function with <code>manufacturer.add(thing)</code>, the dispatch would be occurring based on the type of the manufacturer object; the Python compiler would identify the appropriate type and call the <code>add</code> associated with that type. The same process applies for built-in types. On the other hand, in Julia multiple dispatch uses all of a function’s arguments to choose which method should be invoked, instead of just the first argument.  
+            </p>
+            <p>What are the benefits of doing this? As described in this <a href="https://medium.com/@HeCanThink/multiple-dispatch-the-art-of-pythons-dynamic-potential-b2a378b3804">Medium post</a>, here are a few of the most prominent advantages of multiple dispatch:
+                <ul>
+                    <li><b>Polymorphism and flexibility</b> - enables different function implementations to be selected dynamically based on the combination of argument types</li>
+                    <li><b>Improved extensibility</b> - it becomes easier to extend functionality by adding new methods to handle specific argument types. Thus, new types can be accommodated without rewriting or modifying existing code</li>
+                    <li><b>Avoidance of complex branching and conditionals</b> - multiple dispatch eliminates the need for long chains of if-else or switch-case statements to determine the appropriate action based on the particular combination of argument types</li>
+                </ul>
+            </p>
+            <p>Hopefully, at this point, the value of Julia is clear. Multiple dispatch provides increased flexibility, code modularity, and extensibility to enable developers to define specialized behavior for arguments with different types or combinations of types. As a result, Julia makes writing code for numerical and scientific computing clean, efficient, and performant, precisely why I’m using it in my research.</p>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

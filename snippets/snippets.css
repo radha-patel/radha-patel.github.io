@@ -1,0 +1,48 @@
+.outer-box {
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+.project-title {
+    margin-bottom: 4px;
+}
+
+.project-subtitle {
+    color: gray;
+    font-size: 15px;
+    line-height: 1.3;
+    font-style: italic;
+}
+
+.project-description {
+    font-size: 14px;
+}
+
+.project-image {
+    display: block;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vertical-project-image {
+    height: 70vh;
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    border: none;
+    padding: 0;
+}
+
+.btn {
+    padding: 0;
+}
+
+.btn-link {
+    font-size: 14px;
+}
